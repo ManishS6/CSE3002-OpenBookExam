@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h1>Revising JavaScript</h1>
+        <script>
+            // alert("Welcome to the world of JavaScript");
+            var emp=["Apple","Google","Motorola"];
+            for(i=0;i<emp.length;i++){
+                document.write(emp[i]+"<br/>");
+            }
+            document.write("<br/>");
+            // using new keyword
+            var emp2 = new Array();
+            emp2[0]="Manish";
+            emp2[1]="Arun";
+            emp2[2]="Sanjay";
+            emp2[3]="Sumit";
+            for(i=0;i<emp2.length;i++){
+                document.write(emp2[i]+"<br/>");
+            }
+            var ary1 = new Array("Sadi");
+            var ary2 = new Array("Butt");
+            var ary3 = ary1.concat(ary2);
+            document.write("<br/>"+ary3);
+            document.write("<br/><br/>");
+            var ary = new Array("A","B","C","D","E");
+            document.write(ary.slice(2,4));
+        </script>
+    </body>
+</html>
