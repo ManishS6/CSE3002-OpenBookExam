@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Testing AJAX</title>
+    <script>
+        // (function(){
+            var hReq;
+            // document.getElementById("aBut").addEventListener("click",createReq);
+            function createReq(){
+                hReq = new XMLHttpRequest();
+                if(!hReq){
+                    alert("Cant make an object of XMLHTTP");
+                    return false;
+                }
+                hReq.onreadystatechange=alertUser;
+                hReq.open('GET','test.html',true);
+                hReq.send();
+            }
+            function alertUser(){
+                if(hReq.readyState === XMLHttpRequest.DONE){
+                    if(hReq.status === 200){
+                        alert(hReq.responseText);
+                    } else {
+                        alert("There was a problem with the request");
+                    }
+                }
+            }
+        // })();
+    </script>
+</head>
+<body>
+    <button id="aBut" type="button" onclick=createReq()>Make a request</button>
+</body>
+</html>
