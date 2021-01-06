@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Numeric Validation</h2>
+    <p>Please input a number between 1 and 10:</p>
+    <input type="text" id="number">
+    <button id="button" onclick="myNumeric()">Submit</button>
+    <p id="p"></p>
+    <script>
+    function myNumeric(params) {
+        var a,op;
+        a = document.getElementById("number").value;
+        if(isNaN(a)|| a<1 ||a >10){
+            op = "Input not valid";
+        } else {
+            op = "input Ok";
+        }
+        document.getElementById("p").innerHTML = op;
+    }
+    </script>
+</body>
+</html>
