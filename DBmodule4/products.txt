@@ -1,0 +1,2 @@
+P001	Cheese	150	\N
+H001	Himalayan Facewash	2510	\N
