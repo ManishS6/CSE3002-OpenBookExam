@@ -1,0 +1,8 @@
+h3{
+    font-family: 'Times New Roman';
+    color: blue;
+    text-decoration: italics;
+}
+p,h2{
+    color: red;
+}
