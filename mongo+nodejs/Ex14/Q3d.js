@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const url = "mongodb+srv://manishSwami:manish123@cluster0.ldvmn.mongodb.net/first?retryWrites=true&w=majority";
+const url = "api-key";
 MongoClient.connect(url,{useUnifiedTopology:true}, function(err, db) {
   if (err) throw err;
   var dbo=db.db("first");
