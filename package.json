@@ -1,0 +1,19 @@
+{
+  "name": "cse3002-openbookexam",
+  "version": "1.0.0",
+  "description": "This is a project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManishS6/CSE3002-OpenBookExam.git"
+  },
+  "author": "Manish Swami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManishS6/CSE3002-OpenBookExam/issues"
+  },
+  "homepage": "https://github.com/ManishS6/CSE3002-OpenBookExam#readme"
+}
